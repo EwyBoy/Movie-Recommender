@@ -74,7 +74,6 @@ public class GenreController implements Initializable {
                     GenreModel rowData = row.getItem();
                     if (rowData.getList() != null)  {
                         name[0] = rowData.getList();
-                        System.out.println(Arrays.toString(name));
                         String genre = Arrays.toString(name).replace("[", "").replace("]", "");
                         error.setText("");
                         title.setText(genre);

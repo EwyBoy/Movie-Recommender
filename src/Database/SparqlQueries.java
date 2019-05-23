@@ -264,7 +264,6 @@ public class SparqlQueries {
         ResultSet resultSet = QueryExecutionFactory
                 .create(query, model)
                 .execSelect();
-        //resultSet.forEachRemaining(qsol -> System.out.println(qsol.get("?title")));
         return resultSet;
     }
 

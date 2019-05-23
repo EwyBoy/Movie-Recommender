@@ -102,6 +102,7 @@ public class MovieController implements Initializable {
     private TableColumn<MovieModel, String> tab_table;
 
     public static List<Movie> selectedMovies = new ArrayList<>();
+    public static List<Movie> queriedMovieList = new ArrayList<>();
 
     private ObservableList<MovieModel> observableList = FXCollections.observableArrayList();
     private ObservableList<String> observableMovieList = FXCollections.observableArrayList();
@@ -129,7 +130,6 @@ public class MovieController implements Initializable {
 
                     if (rowData.getList() != null)  {
                         name[0] = rowData.getList();
-                        System.out.println(Arrays.toString(name));
 
                         Movie movie = movieMap.get(
                              Arrays.toString(name)
@@ -166,6 +166,7 @@ public class MovieController implements Initializable {
             qsol -> {
                 if (qsol.get("?title").toString() != null) {
                     observableList.add(new MovieModel(qsol.get("?title").toString()));
+                    queriedMovieList.add(movieMap.get(qsol.get("?title").toString()));
                 }
             }
         );
