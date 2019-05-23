@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" stylesheets="@dark_theme.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MovieController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="search" prefHeight="520.0" prefWidth="880.0" stylesheets="@dark_theme.css">
+         <children>
+            <TextField fx:id="search_box" layoutX="562.0" layoutY="32.0" prefHeight="25.0" prefWidth="278.0" />
+            <Button fx:id="next" layoutX="765.0" layoutY="472.0" mnemonicParsing="false" onAction="#nextButtonPushed" prefHeight="33.0" prefWidth="81.0" text="Next" />
+            <Pane fx:id="movieinfo" layoutX="40.0" layoutY="63.0" prefHeight="378.0" prefWidth="462.0">
+               <children>
+                  <ImageView fx:id="cover" fitHeight="168.0" fitWidth="200.0" layoutX="238.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                  <Text fx:id="title" fill="WHITE" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Title: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="country" fill="WHITE" layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Country: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="language" fill="WHITE" layoutX="16.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Language: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="year" fill="WHITE" layoutX="16.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Year: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="age_rating" fill="WHITE" layoutX="15.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Age Rating:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="user_rating" fill="WHITE" layoutX="15.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="User Rating:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="grossing" fill="WHITE" layoutX="15.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Grossing: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="director" fill="WHITE" layoutX="15.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Director:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="actors" fill="WHITE" layoutX="15.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Actors: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="runtime" fill="WHITE" layoutX="15.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Runtime: ">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="genres" fill="WHITE" layoutX="16.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Genres:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="movieLister" layoutX="16.0" layoutY="255.0" prefHeight="134.0" prefWidth="405.0" />
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="216.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Selector" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <TableView fx:id="movielist" layoutX="562.0" layoutY="72.0" prefHeight="397.0" prefWidth="278.0">
+              <columns>
+                <TableColumn fx:id="tab_table" prefWidth="273.0" text="Movies" />
+              </columns>
+            </TableView>
+            <Text fx:id="search_text" fill="WHITE" layoutX="682.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="add_movie" layoutX="54.0" layoutY="473.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="405.0" text="Add Movie To List - 0 / 5" />
+            <Button fx:id="back" layoutX="684.0" layoutY="472.0" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="33.0" prefWidth="81.0" text="Back" />
+            <Text fill="WHITE" layoutX="674.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|" wrappingWidth="8.87109375">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="reset" layoutX="560.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Reset List" />
+            <Text fx:id="error" fill="WHITE" layoutX="70.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="372.2792830467224" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
