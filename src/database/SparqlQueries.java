@@ -30,6 +30,11 @@ public class SparqlQueries {
         return movies;
     }
 
+    /**
+     * Generates movie objects using triples based on list of movie.getTitle()
+     * @param titles of movie
+     * @return List<Movie>
+     */
     public List<Movie> createMovieObjectsFromMovie(List<Movie> titles) {
         List<Movie> movies = new ArrayList<>();
         for(Movie title : titles) {
@@ -93,6 +98,11 @@ public class SparqlQueries {
         return movies;
     }
 
+    /**
+     * Generates movie objects using triples based on list of movie titles from String
+     * @param titles of movie
+     * @return List<Movie>
+     */
     public List<Movie> createMovieObjects(List<String> titles) {
         List<Movie> movies = new ArrayList<>();
         for(String title : titles) {

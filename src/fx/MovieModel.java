@@ -4,6 +4,10 @@ public class MovieModel {
 
     private String list;
 
+    /**
+     * Helps organize list of all title in UI
+     * @param list
+     */
     public MovieModel(String list) {
         this.list = list;
     }

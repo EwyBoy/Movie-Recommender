@@ -14,7 +14,7 @@ public class Sorting {
         list.sort((o1, o2) -> (o2.getValue()).compareTo(o1.getValue()));
 
         // Put data from sorted list to HashMap
-        HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
+        HashMap<String, Integer> temp = new LinkedHashMap<>();
         for (Map.Entry<String, Integer> aa : list) {
             temp.put(aa.getKey(), aa.getValue());
         }

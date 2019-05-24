@@ -39,11 +39,16 @@ public class Main extends Application {
         //queries.close();
     }
 
+    /**
+     * Main method <---- Start Here ----->
+     * @param stage Java FX
+     * @throws Exception if error in start
+     */
     @Override
     public void start(Stage stage) throws Exception {
 
         SparqlQueries sparqlQueries = new SparqlQueries();
-        testQueries(sparqlQueries);
+        //testQueries(sparqlQueries);
 
         stage.setResizable(true);
 
