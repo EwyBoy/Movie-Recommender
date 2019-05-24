@@ -21,7 +21,7 @@ git clone https://github.com/EwyBoy/Movie-Recommender
 9. If you make any mistakes you can clear the list by simply pressing the `Reset List` button.
 10. Press `next` to continue after selecting 5 movies you enjoy.
 11. This is the genre selection menu. Same rules apply here.
-12. Once selecting 3 genres press `next` to get your movie recommendations.
+12. Once you have selected 3 genres press `next` to get your movie recommendations.
 13. Her you can read about your recommendations.
 14. **Enjoy!**
 
