@@ -21,6 +21,8 @@ public class Main extends Application {
 
         List<String> list = queries.selectRandomMovies(10);
 
+        //.printAllTriples();
+
         List<Movie> movies = queries.createMovieObjects(list);
         List<String> topSubgernes = queries.predictSubgenres(movies);
 

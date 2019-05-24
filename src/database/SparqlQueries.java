@@ -393,9 +393,12 @@ public class SparqlQueries {
         ResultSet resultSet = QueryExecutionFactory
                 .create(query, model)
                 .execSelect();
-        resultSet.forEachRemaining(qsol ->
-                list.add(qsol.get("?name").toString())
+        resultSet.forEachRemaining(
+                querySolution -> {
+                    list.add(querySolution.get("?name").toString());
+                }
         );
+
         return list;
     }
 
@@ -413,7 +416,6 @@ public class SparqlQueries {
         );
         return list;
     }
-
 
     public Boolean allMoviesOfDirector(String director) {
         boolean match = false;
