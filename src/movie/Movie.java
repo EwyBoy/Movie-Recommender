@@ -19,6 +19,25 @@ public class Movie {
     private ArrayList<String> actors;
     private ArrayList<String> keywords;
 
+    /**
+     * @param title
+     * @param year
+     * @param genres
+     * @param runtime
+     * @param language
+     * @param country
+     * @param gross
+     * @param votes
+     * @param rating
+     * @param score
+     * @param link
+     * @param id
+     * @param director
+     * @param actors
+     * @param keywords
+     * 
+     * This class is to create movie objects
+     */
     public Movie (
             String title,
             String year,

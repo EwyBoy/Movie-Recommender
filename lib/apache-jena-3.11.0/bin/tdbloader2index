@@ -222,10 +222,10 @@ fi
 
 # Check location
 if [ ! -e "$LOC" ]; then
-  abort 1 "Database location specified does not exist: $LOC"
+  abort 1 "database location specified does not exist: $LOC"
 fi
 if [ ! -d "$LOC" ]; then
-  abort 1 "Database location is not a directory: $LOC"
+  abort 1 "database location is not a directory: $LOC"
 fi
 
 # Locate and check data text files

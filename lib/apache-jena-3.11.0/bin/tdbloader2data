@@ -228,14 +228,14 @@ if [ ! -e "$LOC" ] ; then
   debug "New database directory created: $LOC"
 fi
 if [ ! -d "$LOC" ]; then
-  abort 1 "Database location is not a directory: $LOC"
+  abort 1 "database location is not a directory: $LOC"
 fi
 
 # Look for any index and data files in the directory.
 # Skip a possible configuration file
 if test -n "$(find "$LOC" -maxdepth 1 -type f ! -name 'this.*' -print -quit)"
 then 
-    abort 1 "Database location is not empty: $LOC"
+    abort 1 "database location is not empty: $LOC"
 fi
 
 # Prepare JVM Arguments

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="frame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750" prefWidth="900.0" stylesheets="@dark_theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.RecommendationController">
+   <children>
+      <Text fill="WHITE" layoutX="368.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommendations" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button fx:id="exit" layoutX="313.0" layoutY="703.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="274.0" text="Exit" />
+      <AnchorPane layoutX="14.0" layoutY="57.0" prefHeight="628.0" prefWidth="274.0" styleClass="box-id">
+         <children>
+            <TextFlow layoutX="14.0" layoutY="63.0" prefHeight="276.0" prefWidth="242.0">
+               <children>
+                  <Text fx:id="description_one" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="78.53125" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="242.0" textAlignment="CENTER">
+               <children>
+                  <Text fx:id="title_one" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" />
+               </children>
+            </TextFlow>
+         </children></AnchorPane>
+      <AnchorPane layoutX="313.0" layoutY="57.0" prefHeight="352.0" prefWidth="274.0" styleClass="box-id">
+         <children>
+            <TextFlow layoutX="14.0" layoutY="63.0" prefHeight="555.0" prefWidth="242.0">
+               <children>
+                  <Text fx:id="description_two" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="78.53125" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="242.0" textAlignment="CENTER">
+               <children>
+                  <Text fx:id="title_two" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" />
+               </children>
+            </TextFlow>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="612.0" layoutY="57.0" prefHeight="352.0" prefWidth="274.0" styleClass="box-id">
+         <children>
+            <TextFlow layoutX="14.0" layoutY="63.0" prefHeight="555.0" prefWidth="242.0">
+               <children>
+                  <Text fx:id="description_three" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="78.53125" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="242.0" textAlignment="CENTER">
+               <children>
+                  <Text fx:id="title_three" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" />
+               </children>
+            </TextFlow>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

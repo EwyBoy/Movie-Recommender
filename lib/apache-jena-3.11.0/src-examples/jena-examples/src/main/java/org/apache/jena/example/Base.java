@@ -36,10 +36,10 @@ public abstract class Base
     /* Constants                       */
     /***********************************/
 
-    /** Relative path to the directory containing sample data */
+    /** Relative path to the directory containing fx data */
     public static final String DATA_DIR = "./src/main/resources/data/";
 
-    /** Relative path to the directory containing sample ontologies */
+    /** Relative path to the directory containing fx ontologies */
     public static final String ONTOLOGIES_DIR = "./src/main/resources/ontologies/";
 
 

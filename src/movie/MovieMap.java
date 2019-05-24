@@ -14,7 +14,19 @@ public class MovieMap {
 
     public MovieMap() {}
 
+    /**
+     *
+     * This class takes ALL movies in JSON and generates a Movie object for each movie
+     * and puts em in a map so I can easily get movie object from a movie title String.
+     *
+     * Map key : String Title
+     * Map entry : Movie movie
+     *
+     * @param movieMap
+     * @return movieMap
+     */
     public static HashMap<String, Movie> initMovieMap(HashMap<String, Movie> movieMap) {
+
         JsonParser parser = new JsonParser();
 
         JsonReader file = null;
