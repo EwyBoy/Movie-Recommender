@@ -11,7 +11,7 @@ git clone https://github.com/EwyBoy/Movie-Recommender
 ```
 
 1. Open the project folder `Movie Recommender` as a project in IntelliJ (Have not tested Eclipse)
-2. Make sure the two required libraries found in the `lib` are recognized and added to your project settings
+2. Make sure the two required libraries found in the `lib` are recognized and added to your project settings. Both `GSON.jar`and the entire `lib` folder inside `lib/apache-jena-3.11.0/`
 3. Make sure language level is set to Java 8. Don't use any other version of Java.
 4. To start the program run `public static void main(String[] args)`
 5. The start window should appear:
